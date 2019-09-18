@@ -1,0 +1,281 @@
+/* nous appelons la police d'écriture par Google font*/
+/*@import url(https://fonts.googleapis.com/css?family=Nunito);*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  }
+
+html {
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Patrick Hand;
+}
+
+h1 {
+   font-size: 250%;
+   text-align: justify;
+}
+
+h2 {
+    font-size: 150%;
+    color : #111111;
+}
+
+h3 {
+  font-size: 100%;
+  color : rgb(19, 18, 18);
+  text-align: justify;
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color:rgb(19, 18, 18);
+  text-align: justify;
+}
+
+li {
+  color: rgb(19, 18, 18);
+  list-style-type: none;
+  text-align: justify;
+}
+
+iframe {
+  float: right;
+  transform: translateZ(.4px) scale(1)           translateX(0%) translateY(-20%) rotate(0deg);
+}
+
+.Wild {
+  display: flex;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.Wild a img {
+    display: block;
+    margin-top: -250px;
+    transform: translateZ(.25px) scale(.75);
+    height: 16%;
+    margin-left: 55px;
+}
+
+/* Début du slide pour l'effet parallax*/
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  -moz-transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);
+  -webkit-transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);
+  transform: translateZ(.25px) scale(.75)         translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6)           translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  margin-left: 38%;
+}
+
+.slide:nth-child(2n) .title {
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 38%;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+  line-height: 49px;
+}
+
+#title {
+  background-image: url("https://www.set.fr/sites/default/files/Mame.jpg");
+  z-index:2;
+}
+
+#title h1 {
+   -moz-transform: translateZ(.25px) scale(.75);
+  -webkit-transform: translateZ(.25px) scale(.75);
+ transform: translateZ(.25px) scale(.75);
+  -moz-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+ transform-origin: 50% 100%;
+ text-shadow: 8px 5px 9px black;
+ color: #F76C6C;
+ font-family: 'Permanent Marker', cursive;
+ font-size: 100px;
+ margin-left: 25%;
+}
+
+#title h2 {
+  -moz-transform: translateZ(.22px) scale(.80);
+  -webkit-transform: translateZ(.22px) scale(.80);
+ transform: translateZ(.22px) scale(.80);
+ transform-origin: 50% 100%;
+ color: #F76C6C;
+ text-shadow: 5px 8px 7px #000;
+ font-family: 'Patrick Hand', cursive;
+ font-size: 60px;
+}
+
+div#slide1{
+  background-image: url(https://i.imgur.com/0wNudn6.png);
+  transform: translateZ(-1px) scale(2);
+}
+
+
+#slide1:before {
+  transform: translateZ(-1px) scale(2);
+}
+#slide2 {
+  background-image: url("https://lorempixel.com/640/480/abstract/4/");
+  z-index:2;
+}
+div#slide3{
+  background-image: url(https://i.imgur.com/4u5PR3g.png);
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  background: #CC3300;
+  height: 130vh;
+  border-top: 5px solid gray;
+}
+/* Fin du slide pour l'effet parallax*/
+
+#slide4 h2 {
+  background-color: #565656;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: #fff;
+}
+form {
+
+  width: 93%;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 2px 8px white, inset 35px 21px 72px grey;
+    border: 1px solid #F76C6C;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  display: block;
+  width: 83%;
+  margin: 10px 89px;
+  border-radius: 11px;
+  box-shadow: 1px 2px 2px black;
+  padding-left: 5px;
+  height: 39px;
+}
+
+select {
+  box-shadow: 1px 2px 2px black;
+  width: 83%;
+  /*margin-left: -92px;*/
+  height: 39px;
+  border-radius: 11px;
+}
+
+textarea {
+  box-shadow: 1px 2px 2px black;
+  width: 83%;
+  /*margin-left: -30px;*/
+  height: 87px;
+  border-radius: 11px;
+}
+
+#contact-submit {
+
+  float: right;
+  overflow: visible;
+  box-shadow: 0 -3px 2px #5e5752;
+}
+
+button {
+	cursor: pointer;
+	position: relative;
+	border-radius: 3.75rem;
+	line-height: 2.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #F76C6C 0%, #CC3300 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50), 0 -0.25rem 1.5rem rgba(110, 15, 155, 1) inset, 0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+	width: 22%;
+}
+
+button span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+button:hover { background-color: #3e8e41 }
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
