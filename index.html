@@ -2,74 +2,133 @@
 <html>
 <head>
 <meta charset="utf-8"> 
-<link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Permanent+Marker&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Manjari|Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 <link rel="stylesheet" href="style.css">
 <title>Portfolio</title>
 </head>
 <body>
-<div id="title" class="slide header">
-  <div class="Wild"><a href="https://www.wildcodeschool.com/fr-FR"><img src="https://i.imgur.com/0t3TIKK.png"></a></div>
-  <h1>Portfolio Campus</h1>
-  <h2>Promotion DevSept2019</h2>
-</div>
+  <!-- burger menu mobile-->
+  <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+  
+          <ul id="menu">
+            <a href="#slide1" ><li>PRÉSENTATION</li></a>
+            <a href="#slide2"><li>ÉLÈVES</li></a>
+            <a href="#slide3"><li>RETROUVE-NOUS</li></a>
+            <a href="#slide4"><li>REJOINS-NOUS</li></a>
+          </ul>
+        </div>
+      </nav>
+      <!-- fin burger menu mobile-->
+  
+  <div class="sidebar">
+
+     <div class="logo"><img src="https://i.imgur.com/R2msHW2.png"></div>
+            <ul id="menu">
+                    <a href="#slide1" ><li>PRÉSENTATION</li></a>
+                    </br>
+                    <a href="#slide2"><li>ÉLÈVES</li></a>
+                    </br>
+                    <a href="#slide3"><li>RETROUVE-NOUS</li></a>
+                    </br>
+                    <a href="#slide4"><li>REJOINS-NOUS</li></a>
+            </ul>
+
+      <div class="social_media">
+
+        <a href="#"></a>
+
+        <a href="#"></a>
+
+        <a href="#"></a>
+
+    </div>
+  </div>
+      <!-- fin de la sidebar-->
+
 <!--Début du code pour le parallax-->
   <!--Page 1-->
-<div id="slide1" class="slide">
-  <div class="title">
-    <h1>Présentation</h1>
-    <h2>Le métier de développeur web</h2>
-     <p>Le métier de développeur web consiste à créer, écrire, tester, documenter des sites Internet, des applications ou des logiciels. Le développeur travaille en équipe, le plus souvent avec des clients, des chefs de projet et d'autres développeurs.</p>
-     <h2>Durée de la formation</h2>
-     <p>Une nouvelle technologie ou un nouveau framework apparaît tous les 6 mois en moyenne. La Wild Code School a choisi la durée de 5 mois pour sa formation afin de se synchroniser avec ce rythme de l'évolution technologique.</p>
-  </div>
-</div>
-<!--Page 2-->
-<div id="slide2" class="slide">
-  <div class="title">
-    <h1>Elève</h1>
-    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-  </div>
-  <img src="https://lorempixel.com/640/480/abstract/3/">
-  <img src="https://lorempixel.com/640/480/abstract/1/"> 
-</div>
-<!--Page 3-->
-<div id="slide3" class="slide">
-    <h1>RETROUVEZ-NOUS</h1>
-      <div class="Map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.9688383622856!2d0.6664306151264404!3d47.393040879170975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd593e3aaaaab%3A0x5e60b318897c16ec!2sFormation%20d%C3%A9veloppeur%20web%20-%20Wild%20Code%20School!5e0!3m2!1sfr!2sfr!4v1568712957946!5m2!1sfr!2sfr" width="600" height="450" frameborder="" style="border:0;" allowfullscreen=""></iframe>
+<div class="container">
+    <div id="title" class="slide header">
+        <div class="Wild"><a href="https://www.wildcodeschool.com/fr-FR"><img src="https://i.imgur.com/0t3TIKK.png"></a></div>
+        <h1>Portfolio Campus</h1>
+        <h2>Promotion Développement Web et Mobile</h2>
+        <h3>Septembre 2019</h3>
       </div>
-      <div class="infos">
-        <h2>Formation développeur web - Wild Code School</h2>
-        <h3>49 Boulevard Preuilly, 37000 TOURS </br> +33 (0)6 40 95 34 98 </br> tours@wildcodeschool.fr</h3>
-        <p>Horaires</p>
-        <ul>
-          <li>Lundi : 9h - 18h</li>
-          <li>Mardi : 9h - 18h</li>
-          <li>Mercredi : 9h - 18h</li>
-          <li>Jeudi : 9h - 18h</li>
-          <li>Vendredi : 9h - 18h</li>
-        </ul>
-      </div>
-</div>
-<!-- Dernière page - Footer-->
-<div id="slide4" class="slide header">
-  <h2>Contact Us</h2>
-  <form id="contact" action="post" method="post">
-    <fieldset>
-      <input placeholder="Mail address" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Home address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-          <textarea name="message" rows="10" cols="60"></textarea> 
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit">Send !</button>
-    </fieldset>
-  </form>
+  <div id="slide1" class="slide">
+    <div class="title">
+        <div class="text1">
+      <h1>- PRÉSENTATION -</h1>
+      <h2><u>Le métier de développeur web</u></h2>
+      <p>Le métier de développeur web consiste à créer, écrire, tester, documenter des sites Internet, des applications ou des logiciels. Le développeur travaille en équipe, le plus souvent avec des clients, des chefs de projet et d'autres développeurs.</p>
+      <h2><u>Durée de la formation</u></h2>
+      <p>Une nouvelle technologie ou un nouveau framework apparaît tous les 6 mois en moyenne. La Wild Code School a choisi la durée de 5 mois pour sa formation afin de se synchroniser avec ce rythme de l'évolution technologique.</p>
+    </div>
+      <div class="picture">
+            <img src="https://i.imgur.com/NDlwXU1.png">
+        </div>
+    </div>
+  </div>
+  <!--Page 2-->
+  <div id="slide2" class="slide">
+    <div class="title">
+      <h1>- ÉLÈVES -</h1>
+      <p>La promo 2019 est probablement la plus belle que la Wild Code School n'ait jamais connu. On dit même et sans conteste que ses élèves sont, à travers les différents campus est à travers le monde, les meilleurs. REGARDEZ-VOUS, VOUS ÊTES BEAUX.</br>
+      <i>Bruno - Alex - Rodolphe - Romain.C - Alexia - Cassandra - Mayté - Stessie - Louis - Dylan - Victor - Guillaume - Frédéric - Adrien - Vincent - Mikael - Stanislas - Eduardo - Romain .B - Etienne - François - Alexandre.V - Sebastien - Antoine - Rémy - Jean - Tanguy - Valentin - Cyril - Quentin - Marie - Sergio</i>
+      </p>
+    <img src="https://i.imgur.com/amP6fCP.jpg"> 
+    </div>
+  </div>
+  <!--Page 3-->
+  <div id="slide3" class="slide">
+        <div class="infos">
+            <h1>- RETROUVE-NOUS -</h1>
+          <h2>Formation développeur web - Wild Code School</h2>
+          <h3>49 Boulevard Preuilly, 37000 TOURS </br> +33 (0)6 40 95 34 98 </br> tours@wildcodeschool.fr</h3>
+          <p>Horaires</p>
+          <ul>
+            <li>Lundi : 9h - 18h</li>
+            <li>Mardi : 9h - 18h</li>
+            <li>Mercredi : 9h - 18h</li>
+            <li>Jeudi : 9h - 18h</li>
+            <li>Vendredi : 9h - 18h</li>
+          </ul>
+        </div>
+        <div class="Map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.9688383622856!2d0.6664306151264404!3d47.393040879170975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd593e3aaaaab%3A0x5e60b318897c16ec!2sFormation%20d%C3%A9veloppeur%20web%20-%20Wild%20Code%20School!5e0!3m2!1sfr!2sfr!4v1568712957946!5m2!1sfr!2sfr" width="400" height="300" frameborder="" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+  </div>
+  <!-- Dernière page - Footer-->
+  <div id="slide4" class="slide header">
+    <h2>- REJOINS-NOUS -</h2>
+    <form id="contact" action="post" method="post">
+      <fieldset>
+        <input placeholder="E-mail" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Adresse" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+            <textarea name="message" rows="10" cols="60"></textarea> 
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit"><p>Envoyer</p></button>
+      </fieldset>
+    </form>
+  </div>
+  <footer>
+        <div class="link">
+          <a href="https://www.facebook.com/WildCodeSchool/" target="_blank"><i><img src="https://i.imgur.com/ltLTQJe.png" alt="facebook"></i></a>
+          <div class="wcs">
+          <a href="https://www.wildcodeschool.com/fr-FR" target="_blank"><i><img src="https://i.imgur.com/0t3TIKK.png" alt="wildcodeschool"></i></a></div>
+          <p>Copyright bla bla bla</p>
+        </div>
+       </footer>
 </div>
 </body>
-
 </html>
